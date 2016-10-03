@@ -9,3 +9,7 @@ PRODUCT_PACKAGES += bt_vendor.conf
 # Permissions
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml
+
+# Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+	qcom.bluetooth.soc=smd
