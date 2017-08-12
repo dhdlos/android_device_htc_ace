@@ -117,7 +117,9 @@ PRODUCT_PACKAGES += \
 	libaudioparameter
 
 # GPS
-PRODUCT_PACKAGES += librpc
+PRODUCT_PACKAGES += \
+	librpc \
+	gps.msm7x30
 
 # Adreno
 PRODUCT_PACKAGES += \
@@ -201,9 +203,6 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += bt_vendor.conf
-
-# GPS
-PRODUCT_PACKAGES += gps.msm7x30
 
 # Proximity Recalibrator
 PRODUCT_PACKAGES += ProximityRecalibrator
