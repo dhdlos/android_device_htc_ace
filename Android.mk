@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq ($(TARGET_DEVICE),aceopt)
+ifeq ($(TARGET_DEVICE),ace)
     LOCAL_PATH := $(call my-dir)
     include $(call all-makefiles-under,$(LOCAL_PATH))
 endif

@@ -15,7 +15,7 @@
 # SELinux
 -include device/qcom/sepolicy/sepolicy.mk
 
-TARGET_SPECIFIC_HEADER_PATH := device/htc/aceopt/include
+TARGET_SPECIFIC_HEADER_PATH := device/htc/ace/include
 
 # inherit ace vendor
 -include vendor/htc/ace/BoardConfigVendor.mk
@@ -40,7 +40,7 @@ TARGET_BOOTLOADER_BOARD_NAME := spade
 TARGET_NO_BOOTLOADER := true
 
 # CM Hardware
-BOARD_HARDWARE_CLASS := device/htc/aceopt/cmhw
+BOARD_HARDWARE_CLASS := device/htc/ace/cmhw
 
 # Use data partition size here because we are using
 # it as /system
@@ -55,8 +55,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Keep ro.product.device as ace to keep camera blobs happy.
 TARGET_VENDOR_DEVICE_NAME := ace
-# But use aceopt for updater-script assert check
-TARGET_OTA_ASSERT_DEVICE := aceopt
 
 # Kernel
 TARGET_KERNEL_CONFIG := ace_defconfig
@@ -75,8 +73,8 @@ AUDIO_FEATURE_ENABLED_COMPRESS_VOIP := false
 AUDIO_FEATURE_ENABLED_PROXY_DEVICE := false
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/aceopt/bluetooth/include
-BOARD_BLUEDROID_VENDOR_CONF := device/htc/aceopt/bluetooth/vnd_ace.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/ace/bluetooth/include
+BOARD_BLUEDROID_VENDOR_CONF := device/htc/ace/bluetooth/vnd_ace.txt
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUETOOTH_USES_HCIATTACH_PROPERTY := false
@@ -85,9 +83,9 @@ BOARD_BLUETOOTH_USES_HCIATTACH_PROPERTY := false
 COMMON_GLOBAL_CFLAGS += -DWITH_SPADE_DSP_PROFILE
 
 # Recovery
-TARGET_RECOVERY_DEVICE_DIRS += device/htc/aceopt
-TARGET_RECOVERY_FSTAB := device/htc/aceopt/rootdir/fstab.htc7x30
-TARGET_RECOVERY_DEVICE_DIRS += device/htc/aceopt
+TARGET_RECOVERY_DEVICE_DIRS += device/htc/ace
+TARGET_RECOVERY_FSTAB := device/htc/ace/rootdir/fstab.htc7x30
+TARGET_RECOVERY_DEVICE_DIRS += device/htc/ace
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 BRIGHTNESS_SYS_FILE := /sys/devices/platform/leds-pm8058/leds/keyboard-backlight/brightness
 
