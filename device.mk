@@ -21,7 +21,6 @@ $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := hdpi
-PRODUCT_LOCALES += en_US
 
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 800
