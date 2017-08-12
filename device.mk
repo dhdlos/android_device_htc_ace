@@ -220,9 +220,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     htc.audio.alt.enable=0 \
     htc.audio.hac.enable=1
 
-ifeq ($(DISABLE_SECURITY),true)
 # Disable ADB authentication and use root shell
 ADDITIONAL_DEFAULT_PROPERTIES += \
 	ro.adb.secure=0 \
 	ro.secure=0
-endif
