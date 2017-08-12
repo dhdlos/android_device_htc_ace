@@ -29,7 +29,6 @@ PRODUCT_BRAND := htc_wwe
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_MODEL := HTC DESIRE HD
 PRODUCT_GMS_CLIENTID_BASE := android-htc-rev
-PRODUCT_RELEASE_NAME := ace
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
