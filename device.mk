@@ -161,9 +161,6 @@ PRODUCT_PACKAGES += \
     ebtables \
     ethertypes
 
-# DeviceSettings
-PRODUCT_PACKAGES += DeviceSettings
-
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
 	dalvik.vm.dex2oat-filter=balanced \
