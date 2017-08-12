@@ -27,7 +27,7 @@ PRODUCT_NAME := lineage_ace
 PRODUCT_DEVICE := ace
 PRODUCT_BRAND := htc_wwe
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_MODEL := HTC DESIRE HD
+PRODUCT_MODEL := HTC Desire HD
 PRODUCT_GMS_CLIENTID_BASE := android-htc-rev
 
 # Set build fingerprint / ID / Product Name ect.
