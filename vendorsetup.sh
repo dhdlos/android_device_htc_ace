@@ -1,1 +1,1 @@
-add_lunch_combo cm_aceopt-userdebug
+add_lunch_combo lineage_aceopt-userdebug
