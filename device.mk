@@ -215,6 +215,12 @@ PRODUCT_PACKAGES += gps.msm7x30
 # Proximity Recalibrator
 PRODUCT_PACKAGES += ProximityRecalibrator
 
+# UMS
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.vold.umsdirtyratio=20
+
+# This is needed for the usb workaround
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.usb.config=charging
+
 # Audio Props - not sure about this (unused?)
 PRODUCT_PROPERTY_OVERRIDES += \
     media.a1026.nsForVoiceRec=0 \
