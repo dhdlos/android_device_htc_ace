@@ -12,6 +12,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Memory
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.sys.fw.bg_apps_limit=16 \
-	ro.config.max_starting_bg=8 \
+	ro.sys.fw.bg_apps_limit=7 \
+	ro.config.max_starting_bg=4 \
 	config.disable_atlas=true
