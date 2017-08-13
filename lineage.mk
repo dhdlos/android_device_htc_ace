@@ -16,7 +16,7 @@
 $(call inherit-product, device/htc/ace/full_ace.mk)
 
 # Inherit common LineageOS configuration
-$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_ace
