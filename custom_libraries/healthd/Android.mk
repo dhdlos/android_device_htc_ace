@@ -17,7 +17,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := libhealthd.msm7x30
-LOCAL_SRC_FILES := healthd_board_htc-msm7x30.cpp
+LOCAL_MODULE := libhealthd.ace
+LOCAL_SRC_FILES := healthd_board_htc-ace.cpp
 LOCAL_C_INCLUDES := system/core/healthd
 include $(BUILD_STATIC_LIBRARY)
