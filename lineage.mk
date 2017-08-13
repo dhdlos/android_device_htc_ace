@@ -13,14 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, device/htc/ace/full_ace.mk)
 
 # Inherit common LineageOS configuration
 $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
-
-# Inherit from ace device
-$(call inherit-product, device/htc/ace/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_ace
