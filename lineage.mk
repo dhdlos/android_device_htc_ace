@@ -26,6 +26,9 @@ PRODUCT_MANUFACTURER := HTC
 PRODUCT_MODEL := HTC Desire HD
 PRODUCT_GMS_CLIENTID_BASE := android-htc-rev
 
+# Keep ro.product.device as ace to keep camera blobs happy.
+TARGET_VENDOR_DEVICE_NAME := ace
+
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=htc_ace \
