@@ -23,6 +23,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.telephony.default_network=0 \
 	mobiledata.interfaces=gannet0,rmnet0,rmnet1,rmnet2 \
+	persist.data.qmi.adb_logmask=0 \
 	ro.use_data_netmgrd=true
 
 # Permissions
