@@ -19,7 +19,6 @@ subdir_makefiles := \
     $(LOCAL_PATH)/custom_libraries/healthd/Android.mk \
     $(LOCAL_PATH)/custom_libraries/libril/Android.mk \
     $(LOCAL_PATH)/custom_libraries/liblights/Android.mk \
-    $(LOCAL_PATH)/custom_libraries/gpsshim/Android.mk \
     $(LOCAL_PATH)/custom_libraries/libsensors/Android.mk \
     $(LOCAL_PATH)/custom_libraries/libshims/Android.mk
 
