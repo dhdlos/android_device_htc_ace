@@ -1,7 +1,6 @@
 # Wifi
 PRODUCT_PACKAGES += \
 	libnetcmdiface \
-	dhcpcd.conf \
 	hostapd \
 	wpa_supplicant \
 	wpa_supplicant.conf
