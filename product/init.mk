@@ -1,8 +1,8 @@
 # Ramdisk
 PRODUCT_PACKAGES += \
-    fstab.htc7x30 \
+    fstab.qcom \
     init.target.rc \
-	init.htc7x30.rc \
-	init.htc7x30.power.rc \
-	init.htc7x30.usb.rc \
-	ueventd.htc7x30.rc
+	init.qcom.rc \
+	init.qcom.power.rc \
+	init.qcom.usb.rc \
+	ueventd.qcom.rc
