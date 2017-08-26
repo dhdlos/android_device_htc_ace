@@ -20,4 +20,4 @@ TARGET_NO_BOOTLOADER := true
 # Use dlmalloc instead of jemalloc because it's
 # supposedly better in single-threaded applications
 # http://blog.poweredbytoast.com/memory-allocators
-MALLOC_IMPL := dlmalloc
+MALLOC_SVELTE := true
