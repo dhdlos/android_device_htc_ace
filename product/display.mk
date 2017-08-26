@@ -28,7 +28,8 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.opengles.version=131072
+	ro.opengles.version=131072 \
+	persist.graphics.vulkan.disable=true
 
 # Disable strict mode
 PRODUCT_PROPERTY_OVERRIDES += \
