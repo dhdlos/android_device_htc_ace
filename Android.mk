@@ -1,4 +1,4 @@
-# Copyright (C) 2016 The Android Open Source Project
+# Copyright (C) 2009 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,6 +13,16 @@
 # limitations under the License.
 
 ifeq ($(TARGET_DEVICE),ace)
-    LOCAL_PATH := $(call my-dir)
-    include $(call all-makefiles-under,$(LOCAL_PATH))
+
+LOCAL_PATH:= $(call my-dir)
+subdir_makefiles := \
+    $(LOCAL_PATH)/custom_libraries/healthd/Android.mk \
+    $(LOCAL_PATH)/custom_libraries/libril/Android.mk \
+    $(LOCAL_PATH)/custom_libraries/liblights/Android.mk \
+    $(LOCAL_PATH)/custom_libraries/gpsshim/Android.mk \
+    $(LOCAL_PATH)/custom_libraries/libsensors/Android.mk \
+    $(LOCAL_PATH)/custom_libraries/libshims/Android.mk
+
+include $(subdir_makefiles)
+
 endif
